@@ -1,0 +1,70 @@
+.home {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #ff2d2d, #ff7f00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-text-box {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .heading-primary {
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    margin-bottom: 6rem;
+  }
+  
+  .heading-primary-main {
+    display: block;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  
+  .heading-primary-sub {
+    display: block;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  
+  .btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
